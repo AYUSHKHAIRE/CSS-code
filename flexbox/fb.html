@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            /*to make flex*/
+            /*it is a flexible box that adjust you automatically*/
+            display: flex;
+            height: 400px;
+            border: 2px solid black;
+            width: 100%;
+            /* flex properties  of container
+            flex-direction: row;is row by default*/
+            /*
+            flex-direction: column; arranged and adjusted columnwi
+            flex-direction: row-reverse;reversed the direction of rows
+            flex-direction: column-reverse;reversed the direction of columns*/
+
+            /*
+            but if i adjust the responsiveness it doesnt wrap
+            to wrap
+            
+            to wrap it
+            flex-wrap: wrap;
+
+            default wrap is no wrap
+            to wrap it reversly
+            flex-wrap: wrap-reverse;[not common]
+            
+            to access direction and wrap in a line
+            flex-flow: row wrap;
+
+            to centre the thing layout
+            justify-content: center;
+            
+            to create equal space between two boxes
+            justify-content: space-between;
+
+            to create equal space between two boxes and corners
+            justify-content: space-evenly;
+
+            to create space along the side of each box equally and indivisually
+            justify-content: space-around;
+ 
+            to make things equal to vertically and horrizontally
+            align-items: center;
+
+            to allign things vertically down
+            align-items: flex-end;
+
+             to allign things vertically up
+            align-items: flex-start;[by default]
+
+            to make equal spaces evenly vertically
+            flex-wrap: wrap;
+            align-items: stretch;
+            */
+            
+
+
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid blue;
+            margin: 10px;
+            width: 150px;
+            height : 150px;
+        }
+        /*
+        now my container and items are made flex container and items
+        so i can apply flex properties in it
+
+         flex properties of items
+
+        visit the next file
+
+        */
+    </style>
+</head>
+
+<body>
+    <h2>flexbox</h2>
+    <div class="container">
+        <div class="item" id="item-1">box no 1</div>
+        <div class="item" id="item-2">box no 2</div>
+        <div class="item" id="item-3">box no 3</div>
+        <div class="item" id="item-4">box no 4</div>
+        <div class="item" id="item-5">box no 5</div>
+        <div class="item" id="item-6">box no 6</div>
+    </div>
+</body>
+
+</html>

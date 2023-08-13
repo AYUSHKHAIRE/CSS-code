@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow</title>
+    <style>
+        .container {
+            color: aliceblue;
+            display: flex;
+        }
+
+        .card {
+            padding: 20px 20px;
+            margin: 20px 10px;
+            background-image: url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=400');
+            /*
+            you can give shadows as folows
+            box-shadow: 5px 5px blue;
+            box-shadow: 5px 5px blue;
+
+            blur redious
+            box-shadow: 5px 5px 20px blue;
+            spread redious
+            box-shadow: 5px 5px 20px 2px blue;
+
+            let set darkness
+            box-shadow: 5px 5px 20px 2px rgba(0, 255, 238, 0.5);
+                                                          ^^^^^^ change this
+
+            all of this for outside surface
+
+            for insinde surface
+            box-shadow: inset 5px 5px black;
+
+            to use multiple color boxshadow
+            box-shadow:  5px 5px rgb(255, 0, 0) , 5px 5px green;
+
+            */}
+        .card h2{
+            /*text shadows are given as 
+            text-shadow: 2px 2px blue;
+            to blur it*/
+            text-shadow: 2px 2px 2px blue;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>let learn box and text shadow</h2>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsa voluptatum fugiat cupiditate,
+                ea dignissimos debitis magnam quasi neque tempore. Voluptates, pariatur repellat?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsa voluptatum fugiat cupiditate,
+                ea dignissimos debitis magnam quasi neque tempore. Voluptates, pariatur repellat?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsa voluptatum fugiat cupiditate,
+                ea dignissimos debitis magnam quasi neque tempore. Voluptates, pariatur repellat?</p>
+        </div>
+    </div>
+</body>
+
+</html>

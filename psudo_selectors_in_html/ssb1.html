@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo selectors in html</title>
+    <style>
+        .container{
+            border: 4px solid blue;
+            background-color: rgb(145, 145, 228);
+            padding: 34px;
+            margin: 34px;
+            width: 500px;
+            margin: auto;
+            border-radius: 34px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /*a hover mean your mice pointer changes the buttons property*/
+        
+        /*once you click on link it shows as visited*/
+        a:visited{
+            color: brown;
+            background-color: aqua;
+        }
+        .btn{
+            background-color: aqua;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font: size 13px;
+            border-radius: 10px;
+        }
+        a:hover{
+            color: rgb(15, 13, 13);
+            background-color: aliceblue;
+            border: 2px solid black;
+        }
+        a:active{
+            background-color: chartreuse;
+        }
+        .btn{
+            background-color: aqua;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font: size 13px;
+            border-radius: 10px;
+        }
+        btn:hover{
+            background-color: aliceblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>let learn about pseudo selectors in html</h1>
+    <div class="container" id="cont1">
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos commodi rerum dolorum voluptate molestiae aliquam aspernatur illum temporibus nobis cupiditate.</p>
+        <button class="btn">contact us</button>
+        <a class="btn" href="https://www.google.com/">read more</a>
+    </div>
+</body>
+</html>

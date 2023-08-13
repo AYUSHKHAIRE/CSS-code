@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z index</title>
+    <style>
+        .box{
+            height: 170px;
+            width: 170px;
+            border: 4px solid rebeccapurple;
+        }
+        #box1{
+            position: relative;
+            background-color: aqua;
+            z-index: 23;
+            top: 64px;
+        }
+        #box2{
+            position: relative;
+            background-color: rgb(174, 255, 0);
+            z-index: 34;
+            top: 4px;
+        }
+        /* z index is a thing that confirms that the upnesses and downnesses of the boxes*/
+    </style>
+</head>
+<body>
+    <div>
+        <h2>let learn Z-index</h2>
+        <div class="box" id="box1">box 1 c</div>
+        <div class="box" id="box2">box 2 </div>
+    </div>
+</body>
+</html>

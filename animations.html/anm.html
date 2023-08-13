@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: blueviolet;
+        }
+
+        .box-1 {
+            background-color: rgb(161, 161, 255);
+            height: 250px;
+            width: 250px;
+            position: relative;
+            /*name*/
+            animation-name: ayu-2;
+            /*time*/
+            animation-duration: 3s;
+            /*how much time it will run*/
+            animation-iteration-count: 1;
+            /*
+            it will play and stop
+            animation-fill-mode: forwards;
+            animation-fill-mode: alternate;
+
+            */
+            /*fast in start and slow later
+            animation-timing-function: ease-out;
+            voice versa            
+            animation-timing-function: ease-in;
+            slow-fast-slow
+            animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+
+            
+
+            */
+            /*start after delay
+            animation-delay: 3s;
+
+            animation direction  
+            animation-direction: alternate-reverse;
+            
+            
+            */
+
+
+
+        }
+
+        @keyframes ayu-1 {
+            form {
+                width: 10px;
+            }
+
+            to {
+                width: 950px;
+            }
+        }
+
+        @keyframes ayu-2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+
+            }
+
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        .box-2 {
+            background-color: rgb(255, 161, 233);
+            height: 250px;
+            width: 250px;
+            /*
+            animation: name duration timing-function delay iteration-count direction fill-mode;*/
+            animation: ayu-3 3s ease-in 3s 2 forwards forwards;
+
+
+        }
+
+        @keyframes ayu-3 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+
+            }
+
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3>let learn animations</h3>
+    <div class="container">
+        <div class="box-1">
+            this is a box
+        </div>
+        <div class="box-2">
+            this is seconf box
+        </div>
+    </div>
+</body>
+
+</html>

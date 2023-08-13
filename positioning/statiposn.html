@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        /*the positions are 
+        static
+        absolute
+        relative
+         fixed 
+        sticky
+        */
+        .boxR {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+        }
+
+        #boxR3 {
+            /*related to its parents normal position
+            here it will shift wrt to the cont position*/
+            position: static;
+            top: 40px;
+            left: 40px;
+        }
+        .cont{
+            border: 3px solid black;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>static position</h3>
+    <h4>the original position</h4>
+    <div class="cont">
+    <div class="boxR" id="boxR1"></div>
+    <div class="boxR" id="boxR2"></div>
+    <div class="boxR" id="boxR3"></div>
+    <div class="boxR" id="boxR4"></div>
+    </div>
+
+</body>
+
+</html>
+<!-- if i put relative
+then box will not disappear
+but in absolute
+it get disappeared -->

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font sizes</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        h2{
+            text-align: center;
+        }
+        .container{
+            border: 2px solid blue;
+            font-size: 10px;
+            padding: 3px 3px;
+            margin :3px 3px;
+
+            /*vh and vw are the units to adjust measurements according to VISIBLE webpage*/
+            height: 150vh;
+            width: 100vw;
+        }
+        #first{
+            /*this will do the font size that respect to the parent*/
+            font-size: 3em;/*not recommanded*/
+            padding: 3em;
+            /*go to computing session in impact
+            ypuuo can see
+            the 3 em is converted to  3 [em in the id ]x 10 px [size of the container] = 30px
+            this use the container font*/
+
+        }
+        #second{
+            font-size: 3rem;/*recommanded*/
+            padding: 3rem;
+            /*go to computing session in impact
+            ypuuo can see
+            the 3 em is converted to  3 [rem in the id ]x 25px [size of the html ] = 75px
+            this is directly conected to the browser*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="first">this is first heading</h2>
+        <h2 id="second">this is second heading</h2>
+        <h2 id="third">this is third heading</h2>
+    </div>
+</body>
+</html>

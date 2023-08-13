@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borders and backgrounds</title>
+    <style>
+        #firspar {
+            color: blueviolet;
+            background-color: aqua;
+            height: 50px;
+            width: 344px;
+            /*border in three lines*/
+            border-width: 4px;
+            border-style: solid;
+            border-radius: 30px;
+        }
+
+        #secpar {
+            color: rgb(27, 218, 110);
+            height: 40px;
+            width: 350px;
+            background-color: rgb(36, 34, 34);
+            /*in a line*/
+            border: 5px solid blue;
+            border-radius: 40px;
+
+        }
+
+        #thipar {
+            color: rgb(170, 27, 218);
+            height: 40px;
+            width: 390px;
+            background-color: rgb(231, 140, 185);
+            /*in a line*/
+            border-top: 10px solid blue;
+            border-left: 10px solid rgb(0, 255, 195);
+            border-bottom: 10px solid rgb(255, 225, 0);
+            border-right: 10px solid rgb(255, 0, 51);
+            border-radius: 40px;
+        }
+
+        #forpar {
+            color: darkgreen;
+            background-color: chartreuse;
+            height: 100px;
+            width: 400px;
+            border: 30px solid black;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 50px;
+        }
+
+        #fifpar {
+            height: 1000px;
+            width: 720px;
+            border: 4px solid red;
+            background-image: url(ayush.jpg);
+            /*if we write repeat x repeat y it get repeated ans x and y axes*/
+            background-repeat: no-repeat;
+            /*in the center*/
+            /*background-position: center center;*/
+            /*y moving wrt x and y*/
+            background-position: 150px 50px;
+            /*
+            we can do it in centre top center down etc
+            centre left
+            cent rright
+            */
+        }
+
+        #sixpar {
+            color: aliceblue;
+            height: 300px;
+            width: 420px;
+            background-image: url(https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>borders and backgrounds</h1>
+    <h4>adjust the height and width aslo the border</h4>
+    <p id="firspar">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum dolorem exercitationem amet.</p>
+    <p id="secpar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem quia corporisftr fji fijnn
+    </p>
+    <h4>handle the borders differently</h4>
+    <p id="thipar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facilis quam harum debitis quasi.</p>
+    <h4>handle the borders differently</h4>
+    <p id="forpar">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae optio laboriosam, aliquam illo fugit
+        obcaecati illum ratione reiciendis fugiat excepturi. Consequatur, rerum distinctio.</p>
+    <h4>background image</h4>
+    <h5>from disc</h5>
+    <p id="fifpar">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aut eaque necessitatibus, officiis
+        voluptatem doloremque ea quasi illum! Omnis, facere ratione.</p>
+    <h5>from internet</h5>
+    <p id="sixpar">Lorem ipsum dolor sit amet.</p>
+</body>
+
+</html>
+<!-- so this is a website  that you can show the display photos that I describe photos in my profile picture  -->

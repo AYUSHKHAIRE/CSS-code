@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        /*universal property*/
+        body{
+            background-color: #9f94ad;
+        }
+        *{
+            box-sizing: border-box;
+            /*till the css cnnnot be added*/
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgb(125 202 188);
+            border: 4px solid rgb(19, 19, 190);
+            width: 200px;
+            border-radius: 45px;
+            /*you can give padding to whole content*/
+            padding: 19px 19px;
+            margin: 34px;
+            /*you can give the specific padding like this*/
+            /*padding-left: 150px;
+            padding-top: 175px;
+            pading right
+            pading bottom*/
+            /*in just one  type you can define nmargin as
+            margin : top right bottom left 
+            {trbl}
+             margin: 100px 200px 300px 400px;
+            */
+            /*if you want top and bottom left and right same than*/
+            /*padding: y(top/bottom) x(left/right); */
+            padding: 35px 19px;
+          /*what will i do if the pading is edited from the impact and the width will be also changed 
+
+
+          margin propertues are applicable to padding
+          
+          */
+        }
+    </style>1
+</head>
+
+<body>
+    <div class="container">
+        <h1>let know about box module</h1>
+        <h3>the box module can defined as</h3>
+        <a href="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png">go to box module</a>
+        <h3>this is my heading</h3>
+        <p id="first">this is my paragrapl Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis vel est
+            temporibus sint quis.</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">this is my paragrapl Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis vel est
+            temporibus sint quis.</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="thrd">this is my paragrapl Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis vel est
+            temporibus sint quis.</p>
+    </div>
+</body>
+
+</html>

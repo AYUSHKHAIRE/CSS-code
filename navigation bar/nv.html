@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+    <style>
+        .navbar {
+            background-color: #8484ed;
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            /*i will move my bar right*/
+            float: left;
+            /*i dont want the list vrtically*/
+            /*the background is not visible as the color is overflown*/
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a:hover {
+            color: rgb(231, 216, 216);
+            background-color: rgb(136, 59, 169);
+        }
+
+        .navbar li a {
+            color: aliceblue;
+            padding: 3px 3px;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .search {
+            color: rgb(9, 9, 124);
+            margin: 13px 20px;
+        }
+
+        .navbar input {
+            color: blue;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 20px;
+            width: 200px;
+
+        }
+
+        body {
+            background-color: rgb(96, 89, 112);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>let learn navigation bar</h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">contact us</a></li>
+                <li><a href="">about us</a> </li>
+                <li><a href="">services</a></li>
+                <div class="search">
+                    <input type="text" name="Search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

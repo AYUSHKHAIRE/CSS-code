@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            /*if i do in center without width it will not be applied*/
+            width: 50%;
+            border: 3px solid red;
+            width :1200px;
+
+        }
+
+        img {
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            display: block
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .box {
+            border: 3px solid black;
+            background-color: #b81a1a8c;
+            margin: 1px 0px;
+            padding: 23px;
+            display: inline-block;
+            width: 33%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <h3>welcome to ayush blogger</h3>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.avb9nDfw3kq7NOoP0grM4wHaEK&pid=Api&P=0" alt="">
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus officiis a alias sequi soluta
+                iste dicta blanditiis. At vitae ut quas repudiandae omnis odit consequuntur modi voluptatibus, rerum
+                fugit quos.</p>
+        </div>
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus officiis a alias sequi soluta
+                iste dicta blanditiis. At vitae ut quas repudiandae omnis odit consequuntur modi voluptatibus, rerum
+                fugit quos.</p>
+        </div>
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus officiis a alias sequi soluta
+                iste dicta blanditiis. At vitae ut quas repudiandae omnis odit consequuntur modi voluptatibus, rerum
+                fugit quos.</p>
+        </div>
+    </header>
+</body>
+
+</html>
+<!-- the display element is the block which it will take
+and display block mean you can set it in centre by width  -->

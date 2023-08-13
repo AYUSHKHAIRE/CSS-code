@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z index</title>
+    <style>
+        .box{
+            height: 170px;
+            width: 170px;
+            border: 4px solid rebeccapurple;
+        }
+        #box1{
+            visibility: visible;
+            background-color: aqua;
+        }
+        #box2{
+            visibility: hidden;
+            background-color: rgb(174, 255, 0);
+        }
+        #box3{
+            background-color: rgb(0, 255, 72);
+        }
+        #box4{
+            display: none;
+            background-color: rgb(0, 47, 255);
+        }
+        #box5{
+            background-color: rgb(255, 0, 217);
+        }
+        #box6{
+            background-color: rgb(255, 231, 192);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>visibility : visible and hidden</h2>
+        <div class="box" id="box1">box 1 contain the visibility</div>
+        <div class="box" id="box2">box 2 hidden but space is reserved</div>
+        <div class="box" id="box3"></div>
+         <!-- $ mean 1 2 3 4 ..... -->
+         <h2>display none</h2>
+        <div class="box" id="box4">box 4 contain the display none</div>
+        <div class="box" id="box5">I am box 5</div>
+        <div class="box" id="box6">the difference between visibility and hidden is that the hidden reserves the space and display dissappears the space </div>
+    </div>
+</body>
+</html>

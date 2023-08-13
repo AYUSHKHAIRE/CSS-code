@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media qurries</title>
+    <style>
+        /*if else like condition*/
+        .dis{
+            background-color: aqua;
+            border: 3px solid blue;
+        }
+        .box{
+            font-size: 65px;
+            background-color: bisque;
+            border: 2px solid black;
+            text-align: center;
+            display: none;
+        }
+        /*only secreen means we support only these media types*/
+        @media only screen and (max-width:300px)
+        {
+            #box-1{
+                display: block;
+            }
+        }
+        @media only screen and ( max-width:500px) and (min-width:300px)
+        {
+            #box-2{
+                display: block;
+                background-color: #9a91ff;
+            }
+        }
+        @media only screen and (max-width:800px) and (min-width:500px)
+        {
+            #box-3{
+                display: block;
+                background-color: #91ffe0;
+            }
+        }
+        @media only screen and (min-width:800px)
+        {
+            #box-4{
+                display: block;
+                background-color: #ff91c8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="dis">
+        <h2>responsive design</h2>
+    <h4>media qurries</h4>
+    <p>it is a method such that if width is somewhat changed than the limits of expansion and compression are set in the websites</p>
+    </div> -->
+    <div class="box" id="box-1">i am a iphone</div>
+    <div class="box" id="box-2">i am a tab</div>
+    <div class="box" id="box-3">i am a desktop</div>
+    <div class="box" id="box-4">i am a wide screen </div>
+</body>
+</html>

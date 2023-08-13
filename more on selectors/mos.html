@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        /*
+        h3{
+            background-color: blueviolet;
+            color: rgb(0, 0, 0);
+            font-size: bold;
+            text-align: center;
+        }
+        div p{
+            /*inside the div
+            background-color: aqua;
+            color: rgb(49, 4, 132);
+        }
+        div li p{
+            background-color: rgb(179, 251, 251);
+        }
+        
+        direct child / element
+        div > p
+        means this tbat the the p DIRECT inside div will apply that property
+        p is right inside div
+         div > p{
+        background-color: rgb(255, 60, 0);
+        } 
+
+        this mean is there a p thats sigling [parent] is div
+        p is right after div
+        div+p{
+            background-color: aqua;
+            color: rgb(49, 4, 132);
+        }
+        */
+        div+p{
+            /*inside the div*/
+            background-color: aqua;
+            color: rgb(49, 4, 132);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h3>more on selectors</h3>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is a paragraph</p>
+                    <p>this is a paragraph in child ul</p>
+                </li>
+            </ul>
+            <p> this is internal paragraph</p>
+        </div>
+        <p> this is inner paragraph</p>
+    </div>
+    <p> this is outermost paragraph</p>
+</body>
+</html>
+<!-- means in depth you can go inside and inside to impliment properties -->

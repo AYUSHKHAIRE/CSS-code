@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            height: 400px;
+            border: 2px solid black;
+            width: 100%;
+        }
+
+        .item {
+            background-color: aquamarine;
+            border: 2px solid blue;
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+
+            /*
+            flex prperties of items
+
+            my box wil go at the end
+            order: 2;
+
+            but i decleared two different orders for two different boxes
+            then the box having gratest border will go at the end
+
+            if i want that my perticular box should response perticularlarly device
+            flex-grow: 2;
+
+            if i decleare two flex grow values for two different boxes
+            like
+            flex-grow: 2;
+            flex-grow: 5;
+            then the box having more flex grow value then perticular boxes should response perticularlarly deviceable such that
+            having more flex value have more increasement
+
+            if i want that my box should shrink automatically devise response
+            flex-shrink: 3;
+            it is opposit flex grow
+
+            if i want to make a default flex basic value of a perticular box
+            flex-basis: 320px;
+            when flex basis is written to row it will control flexibility according to its value width
+            when flex basis is written to column it will control flexibility according to its value height
+            
+            shortcut for the flex three properties
+            flex: 2 2 244px;
+            mean
+            {flex: grow 2 shrink 2 basics 244px;}
+
+            the most used property
+
+            will go  to end of flex
+            align-self: flex-end;
+
+            will go  to start  of flex
+            align-self: flex-start;[default]
+
+            will go  to the centre vertically and horrizontally
+            align-self: center;
+
+            */
+        }
+
+        #item-1 {
+            margin: 10px;
+        }
+
+        #item-2 {
+            margin: 10px;
+        }
+
+        #item-3 {
+            margin: 10px;
+        }
+
+        #item-4 {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>flexbox</h2>
+    <div class="container">
+        <div class="item" id="item-1">box no 1</div>
+        <div class="item" id="item-2">box no 2</div>
+        <div class="item" id="item-3">box no 3</div>
+        <div class="item" id="item-4">box no 4</div>
+    </div>
+</body>
+
+</html>

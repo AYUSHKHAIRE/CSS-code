@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atributes and n th psrudo selector</title>
+    <style>
+        .item {
+            background-color: #ff9b9b;
+            margin: 2px;
+        }
+
+        .container {
+            display: block;
+            width: 334px;
+            margin: auto;
+        }
+
+        /*to target an atribute*/
+        input[type='text'] {
+            padding: 13px;
+            border: 2px solid red;
+        }
+
+        input[type='email'] {
+            padding: 13px;
+            border: 2px solid rgb(102, 0, 255);
+        }
+
+        input[type='password'] {
+            padding: 13px;
+            border: 2px solid rgb(255, 0, 208);
+        }
+
+        /*to target an input*/
+        input {
+            display: block;
+        }
+
+        /*to target an encut tag who has target set*/
+        a[target] {
+            font-size: 20px;
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+        a[target='_self'] {
+            font-size: 20px;
+            color: rgb(109, 175, 64);
+            text-decoration: none;
+        }
+
+        /*li k 3rd bacche ko[element ko select kr lo position no 1 pe*/
+        li:nth-child(1) {
+            color: darkblue;
+        }
+
+        /*now let i want that to colour each 2nd element
+        n starts from 0
+        so it is a series of 0 2 4 6 8 10 12 ...............*/
+        li:nth-child(2n) {
+            color: rgb(139, 0, 9);
+        }
+
+        /*let diff by odd even*/
+        li:nth-child(odd) {
+            color: rgb(176, 255, 219);
+            background-color: black;
+        }
+
+        li:nth-child(even) {
+            color: rgb(255, 252, 176);
+            background-color: rgb(98, 218, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>atributes and n th pseudo selectors</h2>
+        <h3><a href="http://google.com" target="_blank">go to google</a></h3>
+        <h3><a href="http://facebook.com" target="_self">go to facebook</a></h3>
+        <form action="" class="form-cont">
+            <input type="text" placeholder="enter your name">
+            <input type="email" placeholder="enter your email">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" value="submit">
+
+        </form>
+        <ul>
+            <li class="item" id="item-1">item-1</li>
+            <li class="item" id="item-2">item-2</li>
+            <li class="item" id="item-3">item-3</li>
+            <li class="item" id="item-4">item-4</li>
+            <li class="item" id="item-5">item-5</li>
+            <li class="item" id="item-6">item-6</li>
+            <li class="item" id="item-7">item-7</li>
+            <li class="item" id="item-8">item-8</li>
+            <li class="item" id="item-9">item-9</li>
+            <li class="item" id="item-10">item-10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

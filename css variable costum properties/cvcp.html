@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables costum properties</title>
+    <style>
+        /*
+        
+        the rules for variables works as same as local and global
+        */
+
+        /*
+        to make a global variable
+        */
+
+        :root{
+            /*global variable*/
+            --primary-color: rgb(85, 82, 188);  
+            --danger-color: rgb(188, 82, 91);
+            --max-w-b:100px;
+            --max-h-b:100px;
+            --max-h-c:300px;
+            --max-w-c:400px;
+
+
+
+        }
+        .box{
+            /*means this is a local variable*/
+            width: var(--max-w-b);
+            height: var(--max-h-b);
+            margin: 2px 2px;
+            background-color: var(--primary-color);
+            border: 2px solid var(--danger-color);
+
+        }
+        .container{
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: var(--max-h-c);
+            width: var(--max-w-c);
+            background-color: var(--danger-color);
+        }
+    </style>
+</head>
+<body>
+   <h2>css variables costum properties</h2>
+   <div class="container">
+    <div class="box" id="box-1">
+
+    </div>
+    <div class="box" id="box-2">
+
+    </div>
+    <div class="box" id="box-3">
+
+    </div>
+   </div>
+</body>
+</html>

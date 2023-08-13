@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*transition is in short animation
+            in short the change durring the activity*/
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s;
+        }
+        #box:hover{
+            background-color: blueviolet;
+        }
+        #box1{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(64, 0, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*short hand property*/
+            transition: all 3s ease-in .3s;
+        }
+        #box1:hover{
+            background-color: rgb(100, 255, 237);
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>transitions</h2>
+    <div class="container">
+        <div id="box">
+            this is box
+        </div><br>
+        <div id="box1">
+            this is box
+        </div>
+    </div>
+</body>
+</html>
